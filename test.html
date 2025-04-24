@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Активный гражданин-Детям</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script type="text/javascript"></script>
+    <style>
+      body {
+        background-color: #333;
+      }
+
+      .module {
+        height: 100dvh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+        /*height: calc(var(--vh, 1vh) * 100);*/
+        margin: 0 auto;
+        max-width: 30%;
+      }
+
+      .module__item {
+        align-items: center;
+        display: flex;
+        height: 20%;
+        justify-content: center;
+      }
+
+      .module__item:nth-child(odd) {
+        background-color: #fff;
+        color: #f73859;
+      }
+
+      .module__item:nth-child(even) {
+        background-color: #f73859;
+        color: #f1d08a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="module">
+      <div class="module__item">20%</div>
+      <div class="module__item">40%</div>
+      <div class="module__item">60%</div>
+      <div class="module__item">80%</div>
+      <div class="module__item">100%</div>
+    </div>
+  </body>
+</html>
